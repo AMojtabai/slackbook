@@ -20,6 +20,8 @@ make
 
 Building requires `xsltproc`, the DocBook XSL spreadsheets, the DocBook XML 4.5 DTD, and ImageMagick.
 
+## Contributions
+Contributions are greatly appreciated. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 
 ## License
