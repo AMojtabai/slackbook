@@ -79,13 +79,13 @@ development team recommends use of a generic kernel for a variety of
 reasons.  Perhaps the most obvious is size.  The huge kernels are
 currently about twice the size of the generic kernels before they are
 uncompressed and loaded into memory.  If you are running an older
-machine, or one with some small ammount of RAM, you will appreciate the
+machine, or one with some small amount of RAM, you will appreciate the
 savings the generic kernels offer you.  Other reasons are somewhat more
 difficult to quantify.  Conflicts between drivers included in the huge
 kernels do appear from time to time, and generally speaking, the huge
 kernels may not perform as well as the generic ones.  Also, by using the
 generic kernels, special arguments can be passed to hardware drivers
-seperately, rather than requiring these options be passed on the kernel
+separately, rather than requiring these options be passed on the kernel
 command line.  Some of the tools included with Slackware work better if
 your kernel uses some drivers as modules rather than statically building
 them into the kernel.  If you're having trouble understanding this, don't
@@ -95,7 +95,7 @@ be alarmed: just think "huge kernel = good, generic kernel = better".
 <para>
 Unfortunately, using the generic kernels isn't as straightforward as
 using the huge kernels.  In order for the generic kernel to boot your
-system, you must also include a few basic modules in an initird. 
+system, you must also include a few basic modules in an initrd. 
 Modules are pieces of compiled kernel code that can be inserted or removed 
 from a running kernel (ideally using <application>modprobe</application>(8).
 This makes the system somewhat more flexible at the cost of a tiny bit of 

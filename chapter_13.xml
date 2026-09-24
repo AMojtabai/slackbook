@@ -401,7 +401,7 @@
           </row>
           <row>
             <entry>C-x C-s</entry>
-            <entry>Save the currrent buffer to its file</entry>
+            <entry>Save the current buffer to its file</entry>
           </row>
           <row>
             <entry>C-x C-w new-file.txt Enter</entry>

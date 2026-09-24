@@ -23,7 +23,7 @@ here will be applicable there as well.
 <para>
 There are many different ways to configure your computer to connect to
 a network or the Internet, but they fall into two main categories:
-static and dymanic. Static addresses are solid; they are set with the
+static and dynamic. Static addresses are solid; they are set with the
 understanding that they will not be changed, at least not anytime soon.
 Dynamic addresses are fluid; the assumption is that the address will
 change at some time in the future. Typically any sort of network server
@@ -257,7 +257,7 @@ automatically configuring computers with unique IP addresses, netmasks,
 gateways, and DNS servers. Most of the time, you'll want to use DHCP.
 The majority of wireless routers, DSL or cable modems, even firewalls
 all have DHCP servers to can make your life much easier. Slackware
-includes two main tools for connecting to an exising DHCP server and
+includes two main tools for connecting to an existing DHCP server and
 can even act as a DHCP server for other computers. For now though,
 we're just going to look at DHCP clients.
 </para>
@@ -355,7 +355,7 @@ basics.
 <para>
 As you may have already guessed, IPADDR&#91;n&#93; is the Internet
 Protocol Address for the <varname>n</varname> network interface card.
-Typically, <varname>n</varname> corrosponds to
+Typically, <varname>n</varname> corresponds to
 <parameter>eth0</parameter>, <parameter>eth1</parameter>, and so on,
 but this isn't always the case.  You can specify these values to
 pertain to a different network controller with the IFNAME&#91;n&#93;

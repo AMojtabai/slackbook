@@ -10,7 +10,7 @@
 
 <para>
 As we've discussed, Slackware Linux is a multi-user operating system.
-Because of this, its filesystems are mutli-user as well. This means
+Because of this, its filesystems are multi-user as well. This means
 that every file or directory has a set of permissions that can grant or
 deny privileges to different users. There are three basic permissions
 and three sets of permissions for each file. Let's take a look at an
@@ -27,7 +27,7 @@ lists the permissions for a file or
 directory along with the user and group that "own" the file. In this
 case, the permissions are rwxr-xr-x, the user is root and the group is
 also root. The permissions section, while grouped together, is really
-three seperate pieces. The first set of three letters are the
+three separate pieces. The first set of three letters are the
 permissions granted to the user that owns the file. The second set of
 three are those granted to the group owner, and the final three are
 permissions for everyone else.
@@ -64,7 +64,7 @@ permissions for everyone else.
 </table>
 
 <para>
-The permissions are pretty self explainatory of course, at least for
+The permissions are pretty self explanatory of course, at least for
 files. Read, write, and execute allow you to read a file, write to it,
 or execute it. But what do these permissions mean for directories?
 Simply put, the read permissions grants the ability to list the
@@ -222,7 +222,7 @@ sounds confusing, maybe this table will help.
 <para>
 By adding these values together, we can reach any number between 0 and
 7 and specify all possible permission combinations. For example, to
-grant both read and write privilages while denying execute, we would
+grant both read and write privileges while denying execute, we would
 use the number 6. The number 3 would grant write and execute
 permissions, but deny the ability to read the file. We must specify a
 number for each of the three sets when using octal permissions. It's
@@ -301,7 +301,7 @@ To use the letter values with <application>chmod</application>, you
 must specify which set to use them with, either "u" for user, "g" for
 group, and "o" for all others. You must also specify whether you are
 adding or removing permissions with the "+" and "-" signs. Multiple
-sets can be changed at once by seperating each with a comma.
+sets can be changed at once by separating each with a comma.
 </para>
 
 <screen><prompt>darkstar:/tmp/foo# </prompt><userinput>ls -l</userinput>
@@ -389,7 +389,7 @@ drwxrwxrwt 1 root root   34844 2008-03-24 16:11 /tmp
 </screen>
 
 <para>
-Naturally, being a directory for the storage of temporary files sytem
+Naturally, being a directory for the storage of temporary files system
 wide, <filename>/tmp</filename> needs to be readable, writeable, and
 executable by anyone and everyone. Since any user is likely to have a
 file or two stored here at any time, it only makes good sense to

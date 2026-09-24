@@ -397,11 +397,11 @@ we're still not entirely finished, as we need to build the modules.
 </screen>
 
 <para>
-If both the kernel and the modules compiles finished sucessfully, we're
+If both the kernel and the modules compiles finished successfully, we're
 ready to install them. The kernel image needs to be copied into a safe
 location, typically the <filename>/boot</filename> directory, and you
 should give it a unique name to avoid overwriting any other kernel
-images located there. Traditionaly kernel images are named
+images located there. Traditionally kernel images are named
 <filename>vmlinuz</filename> with the kernel release and local version
 appended.
 </para>

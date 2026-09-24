@@ -121,7 +121,7 @@ Today, <application>telnet</application> is put to better use as a
 network diagnostic tool. Because it passes control of the session
 directly to the user, it can be used for a great variety of testing
 purposes. As long as you know what ASCII commands to send to the
-receiving computer, you can do any number of activies, such as read web
+receiving computer, you can do any number of activities, such as read web
 pages or check your e-mail. Simply inform
 <application>telnet</application> what network port to use, and you're
 all set.
@@ -242,7 +242,7 @@ and <application>nmap</application>(1) is just the tool for the job.
 <application>nmap</application> is capable of scanning TCP and UDP
 ports, determining the operating system of a network device, probing
 each located service to determine its specific type, and much much
-more.  Perhaps the simplist way to use <application>nmap</application>
+more.  Perhaps the simplest way to use <application>nmap</application>
 is to "ping" multiple computers at once. You can use network address
 notation (CIDR) or specify a range of addresses and
 <application>nmap</application> will scan every one and return the
@@ -501,7 +501,7 @@ flexibility and configurability can be addicting.
 
 <para>
 <application>pine</application> is one of the oldest command-line
-interface mail clients still in existance and remains one of the most
+interface mail clients still in existence and remains one of the most
 user-friendly. <application>pine</application> was created by the
 University of Washington and carries with it both a trademark and a
 copyright license that are difficult to work with. Thankfully back in
@@ -568,7 +568,7 @@ for that, muttrc(5). You might want to read up on it.
   nature a Mail User Agent (MUA), meaning its true purpose is to read
   and sort email. This was its only job originally, although some
   additional features such as retrieving mail via POP3 and even very
-  basic transfering messages via SMTP have snuck into the application.
+  basic transferring messages via SMTP have snuck into the application.
 </para>
 
 <para>
@@ -860,12 +860,12 @@ versatile copying tool for local and remote files.
 effective techniques to determine what needs to be changed. By checking
 file size and time stamps, it can determine if two files are different.
 If something has changed, it can determine what bytes are different,
-and simply download that handfull of data rather than an entire file.
+and simply download that handful of data rather than an entire file.
 It is truly a marvel of modern technology.
 </para>
 
 <para>
-In its simplist form, <application>rsync</application> connects to an
+In its simplest form, <application>rsync</application> connects to an
 rsync protocol server and downloads a list of files and directories,
 along with their sizes, timestamps, and other information. It then
 compares this to the local files (if any) to determine what it needs to
@@ -885,7 +885,7 @@ options.
 <tgroup cols="2">
   <thead>
     <entry>Argument</entry>
-    <entry>Explaination</entry>
+    <entry>Explanation</entry>
   </thead>
   <tbody>
     <row>
@@ -898,7 +898,7 @@ options.
     </row>
     <row>
       <entry>-a</entry>
-      <entry>Archive mode (equivilant to -rlptgoD)</entry>
+      <entry>Archive mode (equivalent to -rlptgoD)</entry>
     </row>
     <row>
       <entry>-e</entry>

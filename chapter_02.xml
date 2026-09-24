@@ -183,7 +183,7 @@ access system and came to be used for all hard disks and optical drives
 no matter how they are connected to your computer. If you think this is
 confusing, imagine what it would be like if you had a system with a
 SCSI hard drive, a SATA CD-ROM, and a USB memory stick, all with
-unique subsystem indentifiers. The current system is not only cleaner,
+unique subsystem identifiers. The current system is not only cleaner,
 but performs better as well.)
 </para>
 
@@ -458,7 +458,7 @@ step-by-step. In order to do so, just type
   of filesystems to use and whether or not to format the partition. If
   you're installing to a new partition you must format it. If you have
   a partition with data on it you'd like to save, don't. For example,
-  many users have a seperate <filename>/home</filename> partition used
+  many users have a separate <filename>/home</filename> partition used
   for user data and elect not to format it on install. This lets them
   install newer versions of Slackware without having to backup and
   restore this data.
@@ -595,7 +595,7 @@ step-by-step. In order to do so, just type
   options here. The "simple" method attempts to automatically configure
   LILO for your computer, and works well with very simple systems. If 
   Slackware is the only operating system on your computer, it should
-  configure and install LILO for you without any hassels. If you don't
+  configure and install LILO for you without any hassles. If you don't
   trust the simpler method to work, or if you want to take an in-depth
   look at how to configure LILO, the "expert" method is really not all
   that complicated. This method will take you through each step and
@@ -750,7 +750,7 @@ step-by-step. In order to do so, just type
   <para>
     The quickest and easiest way to create a normal user for yourself
     is to log in as root with the root password that you created at
-    the end of the intallation process, and then issue the
+    the end of the installation process, and then issue the
     <application>adduser</application> command. This will interactively assist
     you in creating a user; see <xref linkend="users_managing"/> for more
     information.

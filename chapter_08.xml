@@ -56,7 +56,7 @@ firefox, konqueror, or links and go to
   <orderedlist>
     <listitem>
       <para>
-	Postscript printers use the unversal-ish language of
+	Postscript printers use the universal-ish language of
 	Postscript to communicate with computers.  A driver for
 	postscript printers is usually not needed, since a
 	postscript-compatible subsystem called
@@ -321,7 +321,7 @@ firefox, konqueror, or links and go to
 
     <para>
       <application>lpr</application>, like so many other UNIX
-      applications, does one thig: sends files to a printer. It
+      applications, does one thing: sends files to a printer. It
       doesn't much care if the file looks good or even fits on a
       page. When printing large text files that have not been
       formatted for print, use <application>pr</application>&#40;1&#41;.
