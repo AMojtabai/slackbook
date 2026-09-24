@@ -13,54 +13,54 @@ should feel right at home.  If you've never installed Slackware or have
 only used distributions that make use of graphical installers, you may
 feel a bit overwhelmed at first.  Don't panic! The installation is very easy
 once you understand it, and it works on just about any x86 or x86_64
-platform.
+platform. 
 </para>
 
 <para>
-The latest versions of Slackware Linux are distributed on DVD or CD
-media, but Slackware can be installed in a variety of other ways. We're
-only going to focus on the most common method - booting from a DVD - in
-this book. If you don't have a CD or DVD drive, you might wish to take
-a look at the various README files inside the
-<filename>usb-and-pxe-installers</filename> directory at your favorite
-Slackware mirror. This directory includes the necessary files and
-instructions for booting the Slackware installer from a USB flash drive
-or from a network card that support PXE. The files there are the best
-source of information available for such boot methods.
+The standard Slackware 15 installation process involves writing an
+ISO image to a USB drive or burning an ISO image to a DVD. There
+once was a store where you could buy DVDs/CDs containing Slackware,
+but it is no longer. To begin, download the Slackware 15.0 ISO
+image at mirrors.slackware.com. You can also take a look at the
+various README files inside the <filename>usb-and-pxe-installers</filename>
+directory at your favorite Slackware mirror. This directory includes the necessary files and
+instructions for booting the Slackware installer over the network,
+as well as booting from the minimal USB image. If you are unsure,
+just use the standard ISO image. This guide will only cover
+standard USB installation.
 </para>
 
 <section id="install_boot">
 <title>Booting the Installer</title>
 
 <para>
-Booting the installer is simply a process of inserting the Slackware
-install disk into your CD or DVD drive and rebooting. You may have to
-enter your computer's BIOS and alter the boot order to place the
-optical drive at a higher boot priority than your hard drives. Some
-computers allow you to change the boot order on the fly by pressing a
-specific function key during system boot-up. Since every computer is
-different, we can't offer instructions on how to do this, but the
-method is simple on nearly all machines.
+Booting the installer is simply a process of plugging in your USB
+drive and rebooting. You may have to enter your computer's
+BIOS/UEFI and alter the boot order to place the USB drive at a
+higher boot priority than your internal hard drives. Some computers
+allow you to change the boot order on the fly by pressing a
+specific function key during system boot-up. Since every computer
+is different, we can't offer instructions on how to do this, but
+the method is simple on nearly all machines.
 </para>
 
 <para>
-Once your computer boots from the CD you'll be taken to a screen that
+Once your computer boots from the USB you'll be taken to a screen that
 allows you to enter any special kernel parameters. This is here
 primarily to allow you to use the installer as a sort of rescue disk.
 Some systems may need special kernel parameters in order to boot, but
-these are very rare exceptions to the norm. Most users can simply press
-enter to let the kernel boot.
+these are very rare exceptions to the norm. Most users can simply press enter to let the kernel boot.
 </para>
 
 <screen>
-Welcome to Slackware version 14.0 (Linux kernel 3.2.27)!
+Welcome to Slackware version 15.0 (Linux kernel 5.15.19)!
 
 If you need to pass extra parameters to the kernel, enter them at the prompt
-below after the name of the kernel to boot (huge.s etc).
+below after the name of the kernel to boot (e.g., huge.s).
 
 In a pinch, you can boot your system from here with a command like:
 
-boot: huge.s root=/dev/sda1 rdinit= ro 
+boot: huge.s root=/dev/sda1 rdinit= ro
 
 In the example above, /dev/sda1 is the / Linux partition.
 
@@ -102,7 +102,7 @@ matches your keyboard type and continue on.
 </para>
 
 <screen>
-Welcome to the Slackware Linux installation disk! (version 14.0)
+Welcome to the Slackware Linux installation disk! (version 15.0)
 
 ######  IMPORTANT!  READ THE INFORMATION BELOW CAREFULLY.  ######
 
@@ -118,8 +118,6 @@ Welcome to the Slackware Linux installation disk! (version 14.0)
 - Once you have prepared the disk partitions for Linux, type 'setup' to begin
   the installation process.
 
-- If you do not have a color monitor, type:  TERM=vt100
-  before you start 'setup'.
 
 You may now login as 'root'.
 
@@ -173,7 +171,7 @@ in their man pages.
 In order to partition your hard drive, you'll first need to know how to
 identify it.  In Linux, all hardware is identified by a special file
 called a device file.  These are (typically) located in the
-<filename>/dev</filename> directory. Nearly all hard drives today,
+<filename>/dev</filename> directory. Most hard drives today
 are identified as SCSI hard drives by 
 the kernel, and as such, they'll be assigned a device node such as 
 <filename>/dev/sda</filename>. (Once upon a time each hard drive type
@@ -184,7 +182,9 @@ no matter how they are connected to your computer. If you think this is
 confusing, imagine what it would be like if you had a system with a
 SCSI hard drive, a SATA CD-ROM, and a USB memory stick, all with
 unique subsystem identifiers. The current system is not only cleaner,
-but performs better as well.)
+but performs better as well.) If you have a more modern computer,
+you may see something like <filename>/dev/nvme0n1</filename>. This is your
+NVME disk.
 </para>
 
 <para>
