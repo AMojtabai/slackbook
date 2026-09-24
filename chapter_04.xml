@@ -10,7 +10,7 @@
 <para>
 So you've installed Slackware and you're staring at a terminal prompt,
 what now?  Now would be a good time to learn about the basic command
-line tools.  And since you're staring at a blinking curser, you
+line tools.  And since you're staring at a blinking cursor, you
 probably need a little assistance in knowing how to get around, and
 that is what this chapter is all about.
 </para>
@@ -148,9 +148,9 @@ drwxr-xr-x 2 alan users      136 2007-09-30 03:16 playground/
 </screen>
 
 <para>
-A long listing lets you view the permisions, user and group ownership,
+A long listing lets you view the permissions, user and group ownership,
 file size, last modified date, and of course, the file name itself.
-Notice that the first two entires are files, and the last three are
+Notice that the first two entries are files, and the last three are
 directories.  This is denoted by the very first character on the line.
 Regular files get a "-"; directories get a "d".  There are several
 other file types with their own denominators.  Symbolic links for
@@ -177,7 +177,7 @@ different colors.  Many of the enhanced features of
 <application>ls</application> such as these colors or the trailing
 characters indicating file-type are special features of the
 <application>ls</application> program that are turned on by passing
-various arguments.  As a convienience, Slackware sets up
+various arguments.  As a convenience, Slackware sets up
 <application>ls</application> to use many of these optional arguments
 by default.  These are controlled by the LS_OPTIONS and LS_COLORS
 environment variables.  We will talk more about environment variables
@@ -215,7 +215,7 @@ directory, but this is not actually a function of
 way, you can easily get your current working directory with the
 <application>pwd</application>(1) command.  (Most UNIX shells have
 configurable prompts that can be coaxed into providing this same
-functionality.  In fact, this is another convience setup in the default
+functionality.  In fact, this is another convenience setup in the default
 shell for you by Slackware.)
 </para>
 
@@ -252,7 +252,7 @@ file, but if that file doesn't exist, it will be created.
 
 <para>
 Note how <filename>bar2</filename> was created in our second command,
-and the third command simpl updated the timestamp on
+and the third command simply updated the timestamp on
 <filename>bar1</filename>
 </para>
 
@@ -293,7 +293,7 @@ contents recursively.
 <para>
 There is another tool to remove directories, the humble
 <application>rmdir</application>(1).  <application>rmdir</application>
-will only remove directories that are empty, and complain noisely about
+will only remove directories that are empty, and complain noisily about
 those that contain files or sub-directories.
 </para>
 
@@ -348,7 +348,7 @@ order to deal with directories.
 
 <para>
 The order of the arguments is very important. The first filename must
-be the zip file to create (if the .zip extension is ommitted,
+be the zip file to create (if the .zip extension is omitted,
 <application>zip</application> will add it for you) and the rest are
 files or directories to be added to the zip file.
 </para>
@@ -425,7 +425,7 @@ almost the exact same way.  The advantage to
 <application>bzip2</application> is that it boasts greater compression
 strength. Unfortunately, achieving that greater compression is a slow
 and CPU-intensive process, so <application>bzip2</application> 
-typicall takes much longer to run than other alternatives.
+typically takes much longer to run than other alternatives.
 </para>
 
 </section>
@@ -435,12 +435,12 @@ typicall takes much longer to run than other alternatives.
 
 <para>
 The latest compression utility added to Slackware is
-<application>xz</application>, which impliments the LZMA compression
+<application>xz</application>, which implements the LZMA compression
 algorithm. This is faster than <application>bzip2</application> and
 often compresses better as well. In fact, its blend of speed and
 compression strength caused it to replace
 <application>gzip</application> as the compression scheme of choice for
-Slackware.  Unfortuantely, <application>xz</application> does not have
+Slackware.  Unfortunately, <application>xz</application> does not have
 a man page at the time of this writing, so to view available options,
 use the <arg>--help</arg> argument.  Compressing files is accomplished
 with the <arg>-z</arg> argument, and decompression with <arg>-d</arg>.
@@ -544,7 +544,7 @@ extracts their contents. If we want to create or extract a compressed
 tarball though, we also have to specify the proper compression to use.
 Naturally, if we don't want to compress the tarball at all, we can
 leave these options out. The following command creates a new tarball
-using the <application>gzip</application> compression alogrithm. While
+using the <application>gzip</application> compression algorithm. While
 it's not a strict requirement, it's also good practice to add the .tar
 extension to all tarballs as well as whatever extension is used by the
 compression algorithm.
@@ -652,7 +652,7 @@ text will scroll until it finds the next match.
   <application>less</application>.  Slackware includes both.
   Moreover, Slackware also includes a handy little pre-processor for
   <application>less</application> called
-  <filename>lesspipe.sh</filename>.  This allows a user to exectute
+  <filename>lesspipe.sh</filename>.  This allows a user to execute
   <application>less</application> on a number of non-text files.
   <filename>lesspipe.sh</filename> will generate text output from
   running a command on these files, and display it in
@@ -676,7 +676,7 @@ text will scroll until it finds the next match.
   Searching is done as with <application>more</application>, by typing
   the &#47; key and then your search string, but notice how the search
   results are highlighted for you, and typing <keycap>n</keycap> will
-  take you to the next occurence of the result while
+  take you to the next occurrence of the result while
   <keycap>N</keycap> takes you to the previous occurrence.
 </para>
 

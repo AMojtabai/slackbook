@@ -91,25 +91,25 @@ the &#34;nest&#34; essid operating at any frequency.
 </section>
 
 <section id="wireless_wep">
-<title>Wired Equivilant Protection (or Lack Thereof)</title>
+<title>Wired Equivalent Protection (or Lack Thereof)</title>
 
 <para>
 Wireless networking is by its very nature less secure than wired
 networking. Having your information travelling on the airwaves makes
 it highly susceptible to interception by third parties, so over the
 years a number of methods have been devised to make wireless
-networking more secure.  The first was called Wired Equivilant
+networking more secure.  The first was called Wired Equivalent
 Protection, or WEP for short, and fell far short of its goal. If you
 are still using WEP today, I encourage you to consider using WPA2 or
 some other form of stronger encryption. Attacks against WEP are
 trivial and take only minutes to perform. Unfortunately there are
 still access points configured for WEP, and you may need to connect to
 one from time to time. Connecting to WEP encrypted access points is
-fairly simple, particularly if you have the key in hexidecimal
+fairly simple, particularly if you have the key in hexadecimal
 format. We'll need to pass the <arg>key</arg> argument along with the
-password in hexidecimal or ASCII format. If using an ASCII password,
+password in hexadecimal or ASCII format. If using an ASCII password,
 you'll need to prepend it with &#34;s&#59;&#34; but generally
-speaking, hexidecimal format is preferred.
+speaking, hexadecimal format is preferred.
 </para>
 
 <screen>
@@ -240,7 +240,7 @@ of <varname>wlan0</varname>. It is common for wireless cards to have an interfac
 other than <varname>ethn</varname> and that is reflected here.  When
 <filename>rc.inet1.conf</filename> is read by the start-up scripts,
 Slackware knows to apply all these options to the <varname>wlan0</varname> wifi NIC
-instead of the &#40;probably non-existant&#41; eth4 wired NIC.  Many of the
+instead of the &#40;probably non-existent&#41; eth4 wired NIC.  Many of the
 other options are the same. IP address information is added in
 exactly the same way we discussed for wired network cards in <xref
 linkend="ch_network"/>; however, we have a lot of new variables that need
@@ -249,7 +249,7 @@ some explanation.
 
 <para>
 To begin, <varname>WLAN_ESSID[n]</varname> and
-<varname>WLAN_CHANNEL[n]</varname> should be self-explainatory by now;
+<varname>WLAN_CHANNEL[n]</varname> should be self-explanatory by now;
 they refer the the essid and frequency to
 use. <varname>WLAN_MODE[n]</varname> is either
 <parameter>managed</parameter> or <parameter>ad-hoc</parameter>.
@@ -269,7 +269,7 @@ connect to your wireless network as soon as the system boots.
 <para>
 But wait, that's so much work!  And what if I need to connect to
 multiple wireless networks?  I take my laptop to work and school and
-need to seemlessly setup those wireless connections as soon as one is
+need to seamlessly setup those wireless connections as soon as one is
 within range.  Doing things this way is simply too much work.  You're
 absolutely correct.
 </para>

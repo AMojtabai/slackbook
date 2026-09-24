@@ -138,7 +138,7 @@ Here I have added the user "alan". I specified the user's home
 directory as <filename>/data/home/alan</filename> and used
 <application>bash</application> as my shell. Also, I specified my
 default group as "users" and added myself to a number of useful groups
-for dekstop use.  You'll note that <application>useradd</application>
+for desktop use.  You'll note that <application>useradd</application>
 does not do any prompting like <application>adduser</application>.
 Unless you want to accept the defaults for everything, you'll need to
 tell <application>useradd</application> what to do.
@@ -245,7 +245,7 @@ alan:x:1000:100:,,,:/home/alan:/bin/bash
 </screen>
 
 <para>
-Each line in this file contains a number of fields seperated by a
+Each line in this file contains a number of fields separated by a
 colon. They are, from left to right: username, password, UID, GUID, a
 comment field, home directory, and shell. You'll notice that the
 password field for every entry is an <keycap>x</keycap>. That is

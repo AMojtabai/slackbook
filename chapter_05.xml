@@ -42,12 +42,12 @@ LS_OPTIONS tuns on color for <application>ls</application>.
 </para>
 
 <para>
-Setting your own envirtonment variables is easy.
+Setting your own environment variables is easy.
 <application>bash</application> includes two built-in functions for
 handling this: <application>set</application> and
 <application>export</application>.  Additionally, an environment
 variable can be removed by using <application>unset</application>.
-(Don't panic if you accidently unset an environment variable and don't
+(Don't panic if you accidentally unset an environment variable and don't
 know what it would do.  You can reset all the default variables by
 logging out of your terminal and logging back in.)  You can reference a
 variable by placing a dollar sign ($) in front of it.
@@ -141,7 +141,7 @@ the bracket pair "[ ]" which allows us to fine tune exactly what we
 want to match.  Whenever <application>bash</application> see the
 bracket pair, it substitutes the contents of the bracket.  Any
 combination of letters or numbers may be specified in the bracket as
-long as they are comma seperated.  Additionally, ranges of numbers and
+long as they are comma separated.  Additionally, ranges of numbers and
 letters may be specified as well.  This is probably best shown by
 example.
 </para>
@@ -306,7 +306,7 @@ command will display a list of suspended tasks.
 <para>
 In order to return to a suspended task, run the
 <application>fg</application> built-in to bring the the most recently
-suspended task back into the foreground. If you have mutiple suspended 
+suspended task back into the foreground. If you have multiple suspended 
 tasks, you can specify a number as well to bring one of them to the
 foreground.
 </para>
@@ -316,7 +316,7 @@ foreground.
 </screen>
 
 <para>
-You can also background a task with (surprize)
+You can also background a task with (surprise)
 <application>bg</application>. This will allow the process to continue
 running without maintaining control of your shell. You can bring it
 back to the foreground with <application>fg</application> in the same
@@ -347,11 +347,11 @@ is going to have at least one) are the gettys.
 Slackware, and allows local users (those who can physically sit down in
 front of the computer and type at the keyboard) to login and run
 applications. Each of these gettys is available on different tty
-devices that are accessible seperately by pressing the
+devices that are accessible separately by pressing the
 <keycap>ALT</keycap> key and one of the function keys from
 <keycap>F1</keycap> through <keycap>F6</keycap>. Using these gettys
 allows you to login multiple times, perhaps as different users, and run
-applications in those users' shells silmutaneously. This is most
+applications in those users' shells simultaneously. This is most
 commonly done with servers which do not have
 <application>X</application> installed, but can be done on any machine.
 </para>
@@ -365,7 +365,7 @@ terminals, but the most commonly used are KDE's
 <application>Terminal</application>(1) as well as the old standby,
 xterm(1). If you are using a graphical interface, check your tool bars
 or menus. Each desktop environment or window manager has a virtual
-terminal (often called a terminal emulater), and they are all labelled
+terminal (often called a terminal emulator), and they are all labelled
 differently. Typically though, you will find them under a "System"
 sub-menu in desktop environments. Executing any of these will give you
 a graphical terminal and automatically run your default shell.
@@ -426,9 +426,9 @@ configuring the prompt.
 
 <para>
 <application>bash</application> prompts come in all shapes, colors, and
-sizes, and every user has their own preferances. Personally, I prefer
+sizes, and every user has their own preferences. Personally, I prefer
 short and simple prompts that take up a minimum of space, but I've seen
-and used mutli-line prompts many times. One personal friend of mine
+and used multi-line prompts many times. One personal friend of mine
 even included ASCII-art in his bash prompt. To change your prompt you
 need only to change your PS1 variable. By default, Slackware attempts
 to configure your PS1 variable thusly:
@@ -439,7 +439,7 @@ to configure your PS1 variable thusly:
 
 <para>
 Yes, this tiny piece of funny-looking figures controls your
-<application>bash</application> prompt. Basicaly, every character in
+<application>bash</application> prompt. Basically, every character in
 the PS1 variable is included in the prompt, unless it is a escaped by a
 <keycap>\</keycap>, which tells <application>bash</application> to
 interpret it. There are many different escape sequences and we can't

@@ -27,7 +27,7 @@ installations, and what you can expect to find there.
 <tgroup cols="2">
   <thead>
     <entry>Directory</entry>
-    <entry>Explaination</entry>
+    <entry>Explanation</entry>
   </thead>
   <tbody>
     <row>
@@ -64,7 +64,7 @@ installations, and what you can expect to find there.
     </row>
     <row>
       <entry>/opt</entry>
-      <entry>Directory where some (typicaly proprietary) software may be installed</entry>
+      <entry>Directory where some (typically proprietary) software may be installed</entry>
     </row>
     <row>
       <entry>/proc</entry>
@@ -84,7 +84,7 @@ installations, and what you can expect to find there.
     </row>
     <row>
       <entry>/sys</entry>
-      <entry>Special kernel implimentation details</entry>
+      <entry>Special kernel implementation details</entry>
     </row>
     <row>
       <entry>/tmp</entry>
@@ -219,7 +219,7 @@ Sometimes you may need to share data between Windows and Linux
 computers, but can't transfer the files over a network. Instead you
 require a shared hard drive partition or a USB flash drive. The humble
 vfat filesystem is the best choice here since it is supported by the
-largest variety of operating systems. Unfortuantely, being a Microsoft
+largest variety of operating systems. Unfortunately, being a Microsoft
 designed filesystem, it does not store permissions in the same way as
 traditional Linux filesystems. This means that special options must be
 used to allow multiple users to access data on this filesystem. 
@@ -267,7 +267,7 @@ options to use.
 </screen>
 
 <para>
-Let's disect this. We have an ext3 filesystem located on the third
+Let's dissect this. We have an ext3 filesystem located on the third
 partition of the first IDE device, and we've decided to mount its
 contents on the directory <filename>/mnt/hd</filename>. Additionally,
 we have mounted it read-only so no changes can be made to these
@@ -336,7 +336,7 @@ filesystems.
 
 <para>
 But Alan, that's appalling! I don't want to have to tell mount what
-filesystem or options to use everytime I load a CD. It should be easier
+filesystem or options to use every time I load a CD. It should be easier
 than that. Well thankfully, it is. The <filename>/etc/fstab</filename>
 file contains all this information for filesystems that the installer
 sets up for you, and you can make additions to it as well.
@@ -456,7 +456,7 @@ Set it executable and run it just like we did for
 
 <para>
 SMB is the Windows network file-sharing protocol. Connecting to SMB shares
-(commonly called samba shares) is fairly straight forward. Unfortuantely,
+(commonly called samba shares) is fairly straight forward. Unfortunately,
 SMB isn't as strongly supported as NFS. Still, it offers higher performance
 and connectivity with Windows computers. For these reasons, SMB is the most
 common network file-sharing protocol deployed on local networks. Exporting
@@ -489,7 +489,7 @@ arguments. This can create a security problem if you wish to place your
 samba share in fstab. You may avoid this problem by using the
 <arg>credentials</arg> argument. <arg>credentials</arg> points to a file
 which contains the username and password information. As long as this file
-is safely guarded and readable only by root, the likelyhood that your
+is safely guarded and readable only by root, the likelihood that your
 authentication credentials will be compromised is lessened. 
 </para>
 

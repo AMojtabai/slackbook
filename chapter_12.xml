@@ -23,7 +23,7 @@ them? For that, we need a text editor, and
 <para>
 In short, <application>vi</application> is one of the oldest and most
 powerful text editors still used today. It's beloved by system
-administrators, programmers, hobbiests, and others the world over. In
+administrators, programmers, hobbyists, and others the world over. In
 fact, nearly this entire book was written using
 <application>vi</application>; only the next chapter on
 <application>emacs</application> was written with that editor.
@@ -52,11 +52,11 @@ more features than most users will ever need.
 
 <para>
 <application>vi</application> is very powerful, but also somewhat
-cumbersome and challening for a new user to learn. However, mastering 
+cumbersome and challenging for a new user to learn. However, mastering 
 <application>vi</application> is an important skill for any
 self-respecting system administrator to learn, as 
 <application>vi</application> is included on nearly every Linux
-distribution, every BSD system, and every UNIX system in existance. 
+distribution, every BSD system, and every UNIX system in existence. 
 It's even included in Mac OS X.
 Once you've learned <application>vi</application>, you'll not have to
 learn another text editor to work on any of these systems. In fact,
@@ -227,7 +227,7 @@ order to save your changes by pressing the <keycap>ESC</keycap> key.
 
 <para>
 Since <application>vi</application> can be difficult to learn, I've
-prepared a short cheat sheat that should help you with the basics until
+prepared a short cheat sheet that should help you with the basics until
 you begin to feel comfortable.
 </para>
 
@@ -331,15 +331,15 @@ you begin to feel comfortable.
     </row>
     <row>
       <entry>:s'old'new'g</entry>
-      <entry>Replace all occurances of 'old' with 'new' (current line only)</entry>
+      <entry>Replace all occurrences of 'old' with 'new' (current line only)</entry>
     </row>
     <row>
       <entry>:%s'old'new'g</entry>
-      <entry>Replace all occurances of 'old' with 'new' (all lines)</entry>
+      <entry>Replace all occurrences of 'old' with 'new' (all lines)</entry>
     </row>
     <row>
       <entry>/asdf</entry>
-      <entry>Locate next occurance of asdf</entry>
+      <entry>Locate next occurrence of asdf</entry>
     </row>
     <row>
       <entry>:q</entry>

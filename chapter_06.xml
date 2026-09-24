@@ -9,7 +9,7 @@
 Slackware systems often run hundreds or thousands of programs, each of
 which is referred to as a process. Managing these processes is an
 important part of system administration. So how exactly do we handle
-all of these seperate processes?
+all of these separate processes?
 </para>
 
 <section>
@@ -71,7 +71,7 @@ syntax. In order to do so, we must use the <arg>aux</arg> argument.
 
 <note><para>
 This is distinct from the <arg>-aux</arg> argument, but in most cases
-the two arguments are equivilant. This is a decades-old relic. For more
+the two arguments are equivalent. This is a decades-old relic. For more
 information, see the man page for <application>ps</application>.
 </para></note>
 
@@ -222,7 +222,7 @@ receive it.
 
 <para>
 In order to signal a process, we first need to know it's PID. You can
-get this easily with <application>ps</application> as we discused. In
+get this easily with <application>ps</application> as we discussed. In
 order to send different signals to a running process, you simply pass
 the signal number and <arg>-s</arg> as an argument.  The <arg>-l</arg>
 argument lists all the signals you can choose and their number. You can
