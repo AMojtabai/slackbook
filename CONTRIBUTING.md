@@ -49,6 +49,9 @@ Commit message format:
 4. Be ready to revise it after review. 
 
 
+## AI
+AI is permitted for research, but you must verify it yourself, and everything you write MUST be hand-written.
+
 ## Reporting issues
 
 Open an issue for outdated text, mistakes, or things that are missing. Say which chapter and which section is wrong.
